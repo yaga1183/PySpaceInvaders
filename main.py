@@ -148,7 +148,7 @@ class PySpaceInvaders:
     def _collide_missile_and_aliens(self):
 
         # If no missile, no collision to check
-        if not self.spaceship.missile.is_active:
+        if not self.spaceship.missile.is_active or self.spaceship.missile.rect is None:
             return
 
         # Get rectangle from missile
@@ -175,7 +175,7 @@ class PySpaceInvaders:
         saucer_rect = self.aliens.saucer.rect
 
         # if collision, make the saucer explode and remove missile
-        if missile_rect.colliderect(saucer_rect):
+        if missile_rect is not None and missile_rect.colliderect(saucer_rect):
             self.aliens.saucer.explode()
             self.spaceship.missile.is_active = False
 
@@ -210,7 +210,7 @@ class PySpaceInvaders:
     def _collide_missile_and_lasers(self):
 
         # If no missile, no collision to check
-        if not self.spaceship.missile.is_active:
+        if not self.spaceship.missile.is_active or self.spaceship.missile.rect is None:
             return
 
         # Get each laser rectangle and missile rectangle
