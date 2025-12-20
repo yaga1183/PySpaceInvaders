@@ -4,62 +4,73 @@
 [![Module](https://img.shields.io/badge/module-pygame-brightgreen.svg?style=flat)](http://www.pygame.org/news.html)
 [![Release](https://img.shields.io/badge/release-v1.0-orange.svg?style=flat)]()
 
-## Space Invaders
+## 太空侵略者
 
-Space invaders is originally an arcade game released in 1978. It is a 2D shooter, the first of its genre. 
-The goal, as for most of the arcade game of this time, is to obtain the highest score by destroying continuously the incoming aliens.
+太空侵略者最初是一款於 1978 年發行的街機遊戲。它是一款 2D 射擊遊戲，也是該類型遊戲的開山之作。
 
-Here is two gifs of gameplay :
+和當時大多數街機遊戲一樣，它的目標是透過不斷消滅來襲的外星人來獲得最高分。
+
+以下是兩個遊戲示範的 GIF 動畫：
 <p float="left">
   <img src="https://i.imgur.com/WKrfXYW.gif" />
   <img src="https://i.imgur.com/H9q8WB7.gif" />
 </p>
 
 
-## Gameplay 
+## 遊戲玩法
 
-Many aliens are invading world and move slowly to you, shooting laser randomly in your direction.
+許多外星人正在入侵地球，它們緩慢地向你逼近，並隨機向你發射雷射。
 
-The spaceship (aka the player) can move on the horizontal axis, avoiding laser shots. 
-The spaceship can also fire at aliens, but it should aim properly since it's only one shot at a time.
-It can take cover below barriers, but they are gradually destroyed by enemy lasers and spaceship missiles.
+飛船（即玩家）可以水平移動，躲避雷射攻擊。
 
-Hit aliens are destroyed and award points. Periodicaly, a mistery saucer will appear, granting a lot of bonus point if destroyed.
+太空船也可以向外星人開火，但由於一次只能發射一發子彈，所以需要仔細瞄準。
 
-## How to play
+太空船可以躲在掩體後，但這些掩體會被敵人的雷射和太空船飛彈逐漸摧毀。
 
-Download the source code and type :
+擊中的外星人會被摧毀並獲得分數。飛船也會週期性地出現神秘飛碟，摧毀飛碟可以獲得大量額外分數。
 
-```bash
+## 遊戲玩法
+
+下載原始碼並輸入：
+
+『`bash
+
 C:\.\PySpaceInvaders python main.py
+
 ```
 
-- Arrow keys to move
-- Space key to shoot
+- 使用方向鍵移動
 
-## Requirements
+- 使用空白鍵射擊
 
-python : >= 3.7.6  
-pygame : >= 1.9
+## 系統需求
 
+python：>= 3.7.6
 
-## Technical informations
+pygame：>= 1.9
 
-This game was implemented to reproduce as faithfully as possible the original arcade game.
+## 技術資訊
 
-Sprites come from :
+本遊戲旨在盡可能忠實地還原原版街機遊戲。
+
+角色素材來自：
+
 - https://www.deviantart.com/gooperblooper22/art/Space-Invaders-Sprite-Sheet-135338373
+
 - https://www.spriters-resource.com/arcade/spaceinv/
 
-Sounds have been edited but the original material comes from : 
+音效經過編輯，但原始素材來自：
+
 - https://www.classicgaming.cc/classics/space-invaders/sounds
 
-Gameplay inspiration comes from youtube :
+遊戲玩法靈感來自 YouTube：
+
 - https://www.youtube.com/watch?v=MU4psw3ccUI
+
 - https://www.youtube.com/watch?v=EqZY2CB_t2A
 
-There is a configuration file *config.py* which contains all the configuration data.
-It can be modified to customize the game experience.
+遊戲中包含一個設定檔 *config.py*，其中包含所有設定資料。
 
+您可以修改此文件來自訂遊戲體驗。
 
-I'm very glad you take some time to look at my game and at my code!
+非常感謝您抽出時間查看我的遊戲和程式碼！
